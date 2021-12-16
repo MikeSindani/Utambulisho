@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_examen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/btn_scanexam_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/keyboard_left_arrow_button_icon_icons_com_72692" />
+
+        <ImageView
+            android:id="@+id/btn_scanexam_logo"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/mini_logo" />
+
+        <TextView
+            android:id="@+id/txt_scanexam_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_weight="@integer/material_motion_duration_long_2"
+            android:text="Scan Examen"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+    <eu.livotov.labs.android.camview.ScannerLiveView
+        android:id="@+id/camview"
+        android:layout_width="match_parent"
+        android:layout_height="478dp"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/idTVscanned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@color/teal_700"
+        android:padding="5dp"
+        android:text="@string/scanned_data"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/scanexam_btn_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="220dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_voir" />
+
+    <ImageView
+        android:id="@+id/scanexam_btn_Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_add" />
+
+
+</FrameLayout>

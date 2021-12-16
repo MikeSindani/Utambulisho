@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_interrocontact"
+    tools:context=".InterroContactActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/btn_examcontact_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/keyboard_left_arrow_button_icon_icons_com_72692" />
+
+        <ImageView
+            android:id="@+id/btn_examcontact_logo"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/mini_logo" />
+
+        <TextView
+            android:id="@+id/txt_examcontact_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_weight="@integer/material_motion_duration_long_2"
+            android:text="Examen"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="169dp"
+        android:layout_marginBottom="204dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--Edit text to enter course name-->
+        <EditText
+            android:id="@+id/examcontact_idEdtCourseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter Nom Complet du surveillant"
+            android:textSize="20dp" />
+
+        <!--edit text to enter course duration-->
+
+        <!--edit text to display course tracks-->
+        <EditText
+            android:id="@+id/examcontact_idEdtCourseDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter Cours"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/examcontact_idEdtCourseTracks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:entries="@array/Session"
+            android:textSize="30sp"
+            android:textAlignment="center" />
+
+        <!--edit text for course description-->
+        <Spinner
+            android:id="@+id/examcontact_idEdtCourseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:entries="@array/promotion"
+            android:textSize="30sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:text="Cliquer sur le bouton Scan Afin d'Enregistrer et scan"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <!--button for adding new course-->
+        <ImageView
+            android:id="@+id/examcontact_idBtnAddCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_scan"
+            android:textAllCaps="false" />
+        <!--button for updating our course-->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

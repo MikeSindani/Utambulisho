@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">utambulisho</string>
+    <string name="scanned_data">Scanned Data</string>
+    <string-array name="Session">
+        <item>mi-session:2021</item>
+        <item>1er session:2021</item>
+        <item>2e session:2021</item>
+        <item>mi-session:2022</item>
+        <item>1er session:2022</item>
+        <item>2e session:2022</item>
+    </string-array>
+    <string-array name="promotion">
+        <item>Bac 1 Informatique</item>
+        <item>Bac 2 Informatique</item>
+        <item>Bac 3 Informatique</item>
+        <item>Bac 1 Chimie</item>
+        <item>Bac 2 Chimie</item>
+        <item>Bac 3 Chimie</item>
+        <item>Bac 1 Geologie</item>
+        <item>Bac 2 Geologie</item>
+        <item>Bac 3 Geologie</item>
+        <item>Bac 1 Math-Informatique</item>
+        <item>Bac 2 Math-Informatique</item>
+        <item>Bac 3 Math-Informatique</item>
+        <item>Bac 1 Geographie</item>
+        <item>Bac 2 Geographie</item>
+        <item>Bac 3 Geographie</item>
+        <item>Bac 1 Environement</item>
+        <item>Bac 2 Environement</item>
+        <item>Bac 3 Environement</item>
+    </string-array>
+</resources>
